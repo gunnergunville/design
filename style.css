@@ -11,14 +11,21 @@ padding: 0;
 }
 
 h1 {
-font-size: 80px;
-line-height: 100px;
-color: #2F1D1D;
+font-size: 150px;
+line-height: 150px;
+color: #CDDCE5;
 }
 
 h2 {
 font-size: 36px;
 line-height: 100px;
+text-align: center;
+color: #CDDCE5;
+}
+
+p {
+font-size: 22px;
+line-height: 22px;
 text-align: center;
 color: #FFFFFF;
 }
@@ -42,8 +49,8 @@ footer{
     margin: 4px;
     padding: 5px;
     min-height: 80px;
-    border-radius: 12pt;
-    background: #FF5959;
+    border-radius: 6pt;
+    background: #6D4E3D;
 }
 /* The grid-area property places a grid item into a named
    * region (area) of the grid. */
@@ -57,11 +64,11 @@ footer{
   /*** end global grid styling ***/
 
 
-  .yellow-box {
-    background-color: #F5FF86;
+  .box {
+    background-color: #262C12;
     margin: 1.2em;
-    padding: 20px;
-    border-radius: 12pt;
+    padding: 30px;
+    border-radius: 6pt;
     width:auto;
   }
 
@@ -86,8 +93,10 @@ footer{
       #grid {
       display:grid;
       grid-template: "one one"
-                     "two three"
-                     "four five"
+                     "two two"
+                     "three three"
+                     "four four"
+                     "five five"
                      "six six"
                      "seven seven";
       grid-template-columns: repeat (2, 1fr);
@@ -114,17 +123,21 @@ footer{
        * determines the number of columns. Note the number of words
        * in each string must be identical. */
       grid-template: "one one one one"
-                     "two three four five"
-                     "six six seven seven";
+                     "two two two two"
+                     "three three three three"
+                     "four four four four"
+                     "five five five five"
+                     "six six seven seven"
+                     ;
        grid-template-columns: repeat(4, 1fr);
-       grid-gap: 1.2em;
+       grid-gap: 1em;
     }
 
     .flex-wrapper {
       display: flex;
     }
-    #six>.flex-wrapper>.yellow-box,
-    #seven>.flex-wrapper>.yellow-box{
+    #six>.flex-wrapper>box,
+    #seven>.flex-wrapper>box{
       width:100%;
     }
   }
