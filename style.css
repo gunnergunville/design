@@ -1,17 +1,29 @@
-h1, h2 {
+.header {
+  background-color: #262C12;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
 font-family: 'Staatliches', cursive;
-margin: 0;
-padding: 0;
+margin: 10px;
+padding: 5px;
+}
+
+h2 {
+font-family: 'Staatliches', cursive;
+margin: 2px;
+padding: 2px;
 }
 
 * {
 font-family: 'Raleway', sans-serif;
-margin: 0;
-padding: 0;
+margin: 0px;
+padding: 0px;
 }
 
 h1 {
-font-size: 150px;
+font-size: 100px;
 line-height: 150px;
 color: #CDDCE5;
 }
@@ -31,27 +43,34 @@ color: #FFFFFF;
 }
 
 footer{
-  background-color:#5E5E5E;
-  padding:20px;}
+  background-color:#262C12;
+  padding:10px;
+
+  text-align: center;
+
+ }
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #5E5E5E;}
-.topnav { display: flex;}
+.nav-wrapper {background-color: #6D4E3D;}
+.topnav { display: flex; justify-content: center;
+  align-items: center;}
 .topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
-.topnav a:hover { color: yellow;}
+.topnav a:hover { color: #68AD4C;}
 .topnav a.active { background-color: #4CAF50; color: white;}
 .topnav .icon { display: none;}
+
+.footer-nav-wrapper {background-color: #262C12;}
+.lownav { display: flex; justify-content: center;
+  align-items: center;}
+.lownav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
+.lownav a:hover { color: #68AD4C;}
+.lownav a.active { background-color: #4CAF50; color: white;}
+.lownav .icon { display: none;}
 /*** end basic nav styling ***/
 
 
 /********* GLOBAL GRID STYLES *********/
-.grid-section {
-    margin: 4px;
-    padding: 5px;
-    min-height: 80px;
-    border-radius: 6pt;
-    background: #6D4E3D;
-}
+
 /* The grid-area property places a grid item into a named
    * region (area) of the grid. */
   #one    { grid-area: one; }
@@ -61,13 +80,15 @@ footer{
   #five   { grid-area: five; }
   #six    { grid-area: six; }
   #seven  { grid-area: seven; }
+  #eight  { grid-area: eight; }
+  #nine  { grid-area: nine; }
   /*** end global grid styling ***/
 
 
   .box {
     background-color: #262C12;
-    margin: 1.2em;
-    padding: 30px;
+    margin: 0.5em;
+    padding: 15px;
     border-radius: 6pt;
     width:auto;
   }
@@ -75,7 +96,7 @@ footer{
 
 /********* MEDIA QUERIES BEGIN *********/
 
-@media (max-width: 828px) {
+@media (max-width: 1072px) {
 
     .menu-link {display: none;}
     .topnav.clicked .menu-link {display: block;}
@@ -88,6 +109,17 @@ footer{
     .topnav a.icon {
       display: flex;
       background-color: #333;
+      }
+
+      .grid-section {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        margin-left: 20px;
+          padding: 5px;
+          min-height: 20px;
+          border-radius: 6pt;
+          background: #6D4E3D;
       }
 
       #grid {
@@ -113,7 +145,18 @@ footer{
 }
 
 
-@media (min-width:829px){
+@media (min-width:1073px){
+
+  .grid-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+      padding: 5px;
+      min-height: 20px;
+      border-radius: 6pt;
+      background: #6D4E3D;
+  }
     #grid {
       display: grid;
       margin:5em;
@@ -127,7 +170,8 @@ footer{
                      "three three three three"
                      "four four four four"
                      "five five five five"
-                     "six six seven seven"
+                     "six six six six"
+                     "seven seven seven seven"
                      ;
        grid-template-columns: repeat(4, 1fr);
        grid-gap: 1em;
