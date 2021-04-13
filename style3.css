@@ -1,0 +1,164 @@
+.header {
+  background-color: #262C12;
+  padding: 20px;
+  text-align: center;
+
+header {
+  background: url("images/branchesbar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px
+}
+
+body {
+  background: url("images/brancheshor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  background-attachment: fixed;
+
+
+}
+
+h1 {
+font-family: 'Staatliches', cursive;
+margin: 10px;
+padding: 5px;
+font-size: 80px;
+line-height: 110px;
+color: #CDDCE5;
+text-align: center;
+letter-spacing: 5px;
+}
+
+ul, ol {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 70px
+}
+
+h2 {
+font-family: 'Staatliches', cursive;
+margin: 2px;
+padding: 2px;
+margin: 10px;
+padding: 10px;
+font-size: 36px;
+line-height: 40px;
+text-align: left;
+letter-spacing: 3px;
+color: #CDDCE5;
+}
+
+* {
+@ -22,24 +53,13 @@ margin: 0px;
+padding: 0px;
+}
+
+h1 {
+font-size: 100px;
+line-height: 150px;
+color: #CDDCE5;
+}
+
+h2 {
+font-size: 36px;
+line-height: 100px;
+text-align: center;
+color: #CDDCE5;
+}
+
+p {
+font-size: 22px;
+line-height: 22px;
+text-align: center;
+line-height: 28px;
+text-align: left;
+color: #FFFFFF;
+padding: 40px
+}
+
+footer{
+@ -51,9 +71,9 @@ footer{
+ }
+
+/********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
+.nav-wrapper {background-color: #6D4E3D;}
+.nav-wrapper {background-color: #6D4E3D; }
+.topnav { display: flex; justify-content: center;
+  align-items: center;}
+  align-items: center; }
+.topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
+.topnav a:hover { color: #68AD4C;}
+.topnav a.active { background-color: #4CAF50; color: white;}
+@ -62,7 +82,7 @@ footer{
+.footer-nav-wrapper {background-color: #262C12;}
+.lownav { display: flex; justify-content: center;
+  align-items: center;}
+.lownav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
+.lownav a { color: white; padding: 0px 0px; text-decoration: none; font-size:17px;}
+.lownav a:hover { color: #68AD4C;}
+.lownav a.active { background-color: #4CAF50; color: white;}
+.lownav .icon { display: none;}
+@ -96,7 +116,7 @@ footer{
+
+/********* MEDIA QUERIES BEGIN *********/
+
+@media (max-width: 1072px) {
+@media (max-width: 828px) {
+
+    .menu-link {display: none;}
+    .topnav.clicked .menu-link {display: block;}
+@ -130,9 +150,10 @@ footer{
+                     "four four"
+                     "five five"
+                     "six six"
+                     "seven seven";
+                     "seven seven"
+                     "eight eight";
+      grid-template-columns: repeat (2, 1fr);
+       grid-gap: .2em;
+       grid-gap: 0em;
+     }
+     .flex-wrapper {
+       display: block;
+@ -145,13 +166,13 @@ footer{
+}
+
+
+@media (min-width:1073px){
+@media (min-width:829px){
+
+  .grid-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-right: 120px;
+    margin-left: 120px;
+      padding: 5px;
+      min-height: 20px;
+      border-radius: 6pt;
+@ -172,9 +193,9 @@ footer{
+                     "five five five five"
+                     "six six six six"
+                     "seven seven seven seven"
+                     ;
+                     "eight eight eight eight";
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 1em;
+       grid-gap: 0em;
+    }
+
+    .flex-wrapper {
+
+        display: flex;
+      }
+      #six>.flex-wrapper>.box,
+      #seven>.flex-wrapper>.box{
+        width:100%;
+      }

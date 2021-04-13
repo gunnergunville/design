@@ -3,7 +3,7 @@ function mobilehamburger() {
   let icon = document.getElementById("hamburger");
 
   if (mainTopnav.className === "topnav") {
-    mainTopnav.className += "clicked";
+    mainTopnav.className += " clicked";
     console.log ('icon clicked');
     icon.src="close.svg";
   }
@@ -12,8 +12,5 @@ function mobilehamburger() {
     mainTopnav.className = "topnav";
     icon.src="hamburger.svg";
 
-
-
-  
   }
 }
