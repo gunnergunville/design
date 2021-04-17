@@ -1,7 +1,12 @@
-.header {
-  background-color: #262C12;
-  padding: 20px;
-  text-align: center;
+.wrapper{
+  background-color: #CDDCE5;
+  width:17%;
+  height:50px;
+  display: block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+top: 0;
+
 }
 
 h1 {
@@ -40,6 +45,18 @@ color: #FFFFFF;
 padding: 40px
 }
 
+h3 {
+font-family: 'Fredericka the Great', cursive;
+margin: 2px;
+padding: 2px;
+margin: 10px;
+padding: 10px;
+font-size: 46px;
+line-height: 40px;
+text-align: left;
+letter-spacing: 5px;
+color: #262C12;
+}
 footer{
   background-color:#262C12;
   padding:10px;
@@ -49,21 +66,17 @@ footer{
  }
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #6D4E3D;}
+.nav-wrapper {background-color: #262C12;position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;}
 .topnav { display: flex; justify-content: center;
-  align-items: center;}
-.topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
+  align-items: center;  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;}
+.topnav a { color: white; padding-top: 20px ;padding-bottom: 10px ;padding-left: 16px; padding-right: 16px; text-decoration: none; font-size:17px; }
 .topnav a:hover { color: #68AD4C;}
-.topnav a.active { background-color: #4CAF50; color: white;}
+.topnav a.active { background-color: #262C12; color: #68AD4C;}
 .topnav .icon { display: none;}
-
-.footer-nav-wrapper {background-color: #262C12;}
-.lownav { display: flex; justify-content: center;
-  align-items: center;}
-.lownav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
-.lownav a:hover { color: #68AD4C;}
-.lownav a.active { background-color: #4CAF50; color: white;}
-.lownav .icon { display: none;}
 /*** end basic nav styling ***/
 
 
@@ -163,13 +176,14 @@ footer{
        * each word an area.  The number of words in a string
        * determines the number of columns. Note the number of words
        * in each string must be identical. */
-      grid-template: "one one one one one"
-                     "two two three three three"
-                     "two two three three three"
-                     "four four four four four"
-                     "five five six six six"
-                     "five five six six six"
-                     "seven seven seven seven"
+      grid-template: "one one one one "
+                     "two two two two "
+                     "three three three three "
+                     "four four four four "
+                     "five five five five  "
+                     "six six six six "
+                     "seven seven seven seven "
+                     "eight eight eight eight "
                      ;
        grid-template-columns: repeat(4, 1fr);
        grid-gap: 1em;
