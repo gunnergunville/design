@@ -1,7 +1,12 @@
 .wrapper{
-  width:100%;
-  height:20px;
-  background-color:#262C12;
+  background-color: #CDDCE5;
+  width:17%;
+  height:50px;
+  display: block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+top: 0;
+
 }
 
 .header {
@@ -11,8 +16,13 @@
   padding: 0px;
   margin: 0px
 }
+}
 
+a:hover:not(.active) {
+  background-color: #6D4E3D;
+}
 
+.active {background-colour:#262C12}
 
 body {
   background: url("images/brancheshor.jpg");
@@ -57,6 +67,19 @@ letter-spacing: 3px;
 color: #CDDCE5;
 }
 
+h3 {
+font-family: 'Staatliches', cursive;
+margin: 2px;
+padding: 2px;
+margin: 10px;
+padding: 10px;
+font-size: 46px;
+line-height: 40px;
+text-align: left;
+letter-spacing: 5px;
+color: #262C12;
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0px;
@@ -82,12 +105,16 @@ footer{
  }
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #6D4E3D;}
+.nav-wrapper {background-color: #262C12;position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;}
 .topnav { display: flex; justify-content: center;
-  align-items: center;}
-.topnav a { color: white; padding: 14px 16px; text-decoration: none; font-size:17px;}
+  align-items: center;  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;}
+.topnav a { color: white; padding-top: 20px ;padding-bottom: 10px ;padding-left: 16px; padding-right: 16px; text-decoration: none; font-size:17px; }
 .topnav a:hover { color: #68AD4C;}
-.topnav a.active { background-color: #4CAF50; color: white;}
+.topnav a.active { background-color: #262C12; color: #68AD4C;}
 .topnav .icon { display: none;}
 
 
@@ -129,7 +156,7 @@ footer{
 
     .topnav a.icon {
       display: flex;
-      background-color: #6D4E3D;
+      background-color: #262C12;
       }
 
       .grid-section {
@@ -141,6 +168,7 @@ footer{
           min-height: 20px;
           border-radius: 6pt;
           background: #6D4E3D;
+
       }
 
       #grid {
@@ -159,6 +187,10 @@ footer{
      }
      .flex-wrapper {
        display: block;
+     }
+
+     .wrapper{
+       width:45%;
      }
 
      h1 {
@@ -182,6 +214,8 @@ footer{
        line-height: 28px;
        letter-spacing: 2px
      }
+
+     
 }
 
 
@@ -191,12 +225,13 @@ footer{
   .grid-section {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 120px;
-    margin-left: 120px;
+    margin-right: 150px;
+    margin-left: 150px;
       padding: 5px;
       min-height: 20px;
       border-radius: 6pt;
       background: #6D4E3D;
+
   }
     #grid {
       display: grid;
