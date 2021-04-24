@@ -1,0 +1,249 @@
+.wrapper{
+  background-color: #183140;
+  width:25%;
+  height:50px;
+  display: block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+a:hover:not(.active) {
+  background-color: #F28444;
+}
+
+.active {
+  background-colour: #F28444;
+}
+
+h1 {
+font-family: 'Fredericka the Great', cursive;
+margin: 10px;
+padding: 5px;
+font-size: 80px;
+line-height: 90px;
+color: #183140;
+text-align: center;
+letter-spacing: 5px;
+}
+
+h2 {
+font-family: 'Oswald', sans-serif;
+margin: 2px;
+padding: 2px;
+font-size: 32px;
+line-height: 40px;
+text-align: left;
+color: #183140;
+}
+
+* {
+font-family: 'Oswald', sans-serif;
+margin: 0px;
+padding: 0px;
+color: black;
+}
+
+
+p {
+font-size: 22px;
+line-height: 28px;
+text-align: left;
+color: #black;
+padding: 0px
+}
+
+h3 {
+font-family: 'Fredericka the Great', cursive;
+margin: 2px;
+padding: 2px;
+margin: 10px;
+padding: 10px;
+font-size: 46px;
+line-height: 40px;
+text-align: left;
+letter-spacing: 5px;
+color: #F28444;
+}
+
+body {
+  color: #F2EFDC;
+  background-color: #F2EFDC;
+  background-size: cover;
+
+  padding: 0px;
+  margin: 0px;
+  background-attachment: fixed;
+}
+
+img {max-width:150%;
+height: auto;}
+
+
+
+.footer{
+  color:#F2DFA7;
+  background-color:#F2DFA7;
+  padding:0px;
+margin:0px;
+  text-align: center;
+
+ }
+
+/********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
+.nav-wrapper {background-color: #F2DFA7;position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;}
+.topnav { display: flex; justify-content: center;
+  align-items: center;  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;}
+.topnav a { color: 183140; padding-top: 20px ;padding-bottom: 10px ;padding-left: 16px; padding-right: 16px; text-decoration: none; font-size:17px; }
+.topnav a:hover { color: #183140;}
+.topnav a.active { background-color: #183140; color: #white;}
+.topnav .icon { display: none;}
+/*** end basic nav styling ***/
+
+
+/********* GLOBAL GRID STYLES *********/
+
+/* The grid-area property places a grid item into a named
+   * region (area) of the grid. */
+  #one    { grid-area: one; }
+  #two    { grid-area: two; }
+  #three  { grid-area: three; }
+  #four   { grid-area: four; }
+  #five   { grid-area: five; }
+  #six    { grid-area: six; }
+  #seven  { grid-area: seven; }
+  #eight  { grid-area: eight; }
+  #nine  { grid-area: nine; }
+  #ten  { grid-area: ten; }
+  /*** end global grid styling ***/
+
+
+  .box {
+    background-color: #F2EFDC;
+    color: #F2EFDC;
+    margin: 0.5em;
+    padding: 15px;
+    border-radius: 6pt;
+    width:auto;
+  }
+
+
+/********* MEDIA QUERIES BEGIN *********/
+
+@media (max-width: 828px) {
+
+    .menu-link {display: none;}
+    .topnav.clicked .menu-link {display: block;}
+
+    .topnav {
+      flex-direction: column;
+      align-items: flex-end;
+      }
+
+    .topnav a.icon {
+      display: flex;
+      background-color: #F2DFA7;
+      }
+
+      .wrapper {
+        width: 45%;
+      }
+
+
+
+      .grid-section {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+          padding: 5px;
+          min-height: 20px;
+          border-radius: 6pt;
+          background-color: #F2EFDC;
+          color: #F2EFDC;
+      }
+
+      #grid {
+      display:grid;
+      grid-template: "one one"
+                     "two two"
+                     "three three"
+                     "four four"
+                     "five five"
+                     "six six"
+                     "seven seven"
+                     "eight eight"
+                     "nine nine"
+                     "ten ten";
+      grid-template-columns: repeat (2, 1fr);
+       grid-gap: .2em;
+     }
+
+     .flex-wrapper {
+       display: block;
+     }
+
+     h1 {
+       font-size: 36px;
+       line-height: 40px;
+     }
+
+     h3 {
+       font-size: 32px;
+       line-height: 36px;
+     }
+
+     img {
+       max-width: 100%; height: auto;
+     }
+
+}
+
+
+@media (min-width:829px){
+
+  .grid-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    margin-left: 60px;
+      padding: 5px;
+      min-height: 20px;
+      border-radius: 6pt;
+      background: #F2EFDC;
+  }
+    #grid {
+      display: grid;
+      margin:2em;
+      /* The columns and areas of the grid can be defined visually
+       * using the grid-template property.  Each string is a row, and
+       * each word an area.  The number of words in a string
+       * determines the number of columns. Note the number of words
+       * in each string must be identical. */
+      grid-template: "one one one one"
+                      "two two two two"
+                     "three three three three"
+                     "four four four four"
+                     "five five five five "
+                     "six six six six "
+                     "seven seven seven seven"
+                     "eight eight eight eight"
+                     "nine nine nine nine"
+                     ;
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 1em;
+    }
+
+    .flex-wrapper {
+      display: flex;
+
+    }
+    #six>.flex-wrapper>box,
+    #seven>.flex-wrapper>box{
+      width:100%;
+    }
+  }

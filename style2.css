@@ -118,6 +118,8 @@ top: 0;}
   #seven  { grid-area: seven; }
   #eight  { grid-area: eight; }
   #nine  { grid-area: nine; }
+  #ten  { grid-area: ten; }
+  #eleven  { grid-area: eleven; }
   /*** end global grid styling ***/
 
 
@@ -175,7 +177,10 @@ top: 0;}
                      "five five five"
                      "six six six"
                      "seven seven seven"
-                     "eight eight eight";
+                     "eight eight eight"
+                     "nine nine nine"
+                     "ten ten ten"
+                     "eleven eleven eleven";
       grid-template-columns: repeat (3, 1fr);
        grid-gap: .2em;
      }
@@ -224,9 +229,9 @@ top: 0;}
       grid-template: "one one one one one one"
                      "two two three three three three"
                      "five five five five four four"
-                     "six six six six six six"
-                     "seven seven seven seven seven seven"
-                     "eight eight eight eight eight eight"
+                     "six six seven seven seven seven"
+                     " eight eight eight eight nine nine"
+                     "ten ten eleven eleven eleven eleven"
                      ;
        grid-template-columns: repeat(6, 1fr);
        grid-gap: 1em;
