@@ -171,12 +171,12 @@ top: 0;}
       #grid {
       display:grid;
       grid-template: "one one one"
-                     "two two two"
-                     "three three three"
+                    "three three three"
+                    "two two two"
+                    "five five five"
                      "four four four"
-                     "five five five"
-                     "six six six"
                      "seven seven seven"
+                     "six six six"                     
                      "eight eight eight"
                      "nine nine nine"
                      "ten ten ten"
