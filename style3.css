@@ -1,7 +1,7 @@
 .wrapper{
-  background-color: #002b18;
+  background-color: #CDDCE5;
   width:20%;
-  height:55px;
+  height:50px;
   display: block;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -107,7 +107,7 @@ footer{
  a {color:#CDDCE5;}
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #262C12;position: -webkit-sticky; /* Safari */
+.nav-wrapper {background-color: #002b18;position: -webkit-sticky; /* Safari */
 position: sticky;
 top: 0;}
 .topnav { display: flex; justify-content: center;
