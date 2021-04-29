@@ -104,7 +104,7 @@ footer{
 
  }
 
- a {colour:#CDDCE5;}
+ a {color:#CDDCE5;}
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
 .nav-wrapper {background-color: #262C12;position: -webkit-sticky; /* Safari */
