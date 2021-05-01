@@ -6,6 +6,7 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 a:hover:not(.active) {
@@ -118,11 +119,11 @@ margin:0px;
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
 .nav-wrapper {background-color: #F2DFA7;position: -webkit-sticky; /* Safari */
-position: sticky; z-index: 2
+position: sticky; z-index: 2;
 top: 0;}
 .topnav { display: flex; justify-content: center;
   align-items: center;  position: -webkit-sticky; /* Safari */
-  position: sticky; z-index: 2
+  position: sticky; z-index: 2;
   top: 0;}
 .topnav a { color: 183140; padding-top: 20px ;padding-bottom: 10px ;padding-left: 16px; padding-right: 16px; text-decoration: none; font-size:17px; }
 .topnav a:hover { color: #183140;}
