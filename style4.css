@@ -176,11 +176,12 @@ top: 0;}
                     "five five five"
                      "four four four"
                      "seven seven seven"
-                     "six six six"                     
+                     "six six six"
                      "eight eight eight"
                      "nine nine nine"
+                     "eleven eleven eleven"
                      "ten ten ten"
-                     "eleven eleven eleven";
+                    ;
       grid-template-columns: repeat (3, 1fr);
        grid-gap: .2em;
      }
